@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class topDown : MonoBehaviour
+public class TopDown : MonoBehaviour
 {
     public GameObject target;
     Vector3 offset;
@@ -11,7 +11,7 @@ public class topDown : MonoBehaviour
     }
 
     // Update is called once per frame
-    void LateUpdate()
+    void Update()
     {
         Vector3 newPos = target.transform.position + offset;
         transform.position = newPos;
